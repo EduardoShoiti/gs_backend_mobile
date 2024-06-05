@@ -1,0 +1,20 @@
+# Dependências do Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretorios de saída
+dist/
+build/
+
+# Arquivos de ambiente
+.env
+
+# Sistemas operacionais
+.DS_Store
+Thumbs.db
