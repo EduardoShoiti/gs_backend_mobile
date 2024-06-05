@@ -19,7 +19,7 @@ Este projeto é uma API para o backend do aplicativo mobile gerenciar usuários 
     - [Obter Barreira por ID](#obter-barreira-por-id)
     - [Atualizar Barreira](#atualizar-barreira)
     - [Deletar Barreira](#deletar-barreira)
-- [Licença](#licença)
+- [Integrantes](#integrantes)
 
 ## Instalação
 
@@ -141,3 +141,11 @@ PUT /usuarios/:id
 localhost:3333/barreiras/1
 
 DELETE /barreiras/:1
+
+
+## Integrantes
+- Daniele Vargas - RM 99400
+- Eduardo Shoiti - RM 98704
+- Marcela Silva - RM 552051
+- Marcos Henrique - RM 98348
+- Nathalia Braga - RM 552221
