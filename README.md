@@ -5,7 +5,6 @@ Este projeto é uma API para o backend do aplicativo mobile gerenciar usuários 
 ## Get Started
 
 - [Instalação](#instalação)
-- [Configuração](#configuração)
 - [Uso](#uso)
 - [Endpoints da API](#endpoints-da-api)
   - [Usuários](#usuários)
@@ -49,7 +48,8 @@ O servidor será iniciado em http://localhost:3333.
 ## Endpoints da API
 
 ### Usuários
-Criar Usuário: localhost:3333/usuarios
+#### Criar Usuário: 
+localhost:3333/usuarios
 
 POST /usuarios
 ```json
@@ -61,15 +61,21 @@ POST /usuarios
   }
 ```
 
-Listar Todos os Usuários: localhost:3333/usuarios
+
+#### Listar Todos os Usuários: 
+localhost:3333/usuarios
 
 GET /usuarios
 
-Obter Usuário por ID: localhost:3333/usuarios/1
+
+#### Obter Usuário por ID: 
+localhost:3333/usuarios/1
 
 GET /usuarios/:id
 
-Atualizar Usuário: localhost:3333/usuarios/1
+
+#### Atualizar Usuário: 
+localhost:3333/usuarios/1
 
 PUT /usuarios/:id
 ```json
@@ -81,6 +87,57 @@ PUT /usuarios/:id
 }
 ```
 
-Deletar Usuário: localhost:3333/usuarios/1
+
+#### Deletar Usuário: 
+localhost:3333/usuarios/1
 
 DELETE /usuarios/:1
+
+
+### Barreiras
+#### Criar barreira: 
+localhost:3333/barreiras
+
+POST /barreiras
+```json
+  // Request body
+  {
+    "localizacao": "Local X",
+    "capacidadeMax": 100,
+    "DataCapacidade": "2024-06-03",
+    "id_usuario": 1
+  }
+```
+
+
+#### Listar Todas as Barreiras: 
+localhost:3333/barreiras
+
+GET /barreiras
+
+
+#### Obter Barreira por ID: 
+localhost:3333/barreiras/1
+
+GET /barreiras/:id
+
+
+#### Atualizar Barreira: 
+localhost:3333/barreiras/1
+
+PUT /usuarios/:id
+```json
+// Request body
+{
+  "localizacao": "Local Y",
+  "capacidadeMax": 150,
+  "DataCapacidade": "2024-06-04",
+  "id_usuario": 1
+}
+```
+
+
+#### Deletar Barreira: 
+localhost:3333/barreiras/1
+
+DELETE /barreiras/:1
