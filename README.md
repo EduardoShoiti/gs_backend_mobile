@@ -4,7 +4,7 @@ Este projeto é uma API para o backend do aplicativo mobile gerenciar usuários 
 
 ## Get Started
 
-- [Instalação](##instalação)
+- [Instalação](#instalação)
 - [Configuração](#configuração)
 - [Uso](#uso)
 - [Endpoints da API](#endpoints-da-api)
@@ -44,5 +44,43 @@ Para iniciar o servidor, execute o seguinte comando:
 2. Execute o arquivo compilado:
    ```bash
    node dist/server.js
+O servidor será iniciado em http://localhost:3333.
 
 ## Endpoints da API
+
+### Usuários
+Criar Usuário: localhost:3333/usuarios
+
+POST /usuarios
+```json
+  // Request body
+  {
+    "email": "user@example.com",
+    "senha": "senha123",
+    "qtdLimpezaBarreira": 5
+  }
+```
+
+Listar Todos os Usuários: localhost:3333/usuarios
+
+GET /usuarios
+
+Obter Usuário por ID: localhost:3333/usuarios/1
+
+GET /usuarios/:id
+
+Atualizar Usuário: localhost:3333/usuarios/1
+
+PUT /usuarios/:id
+```json
+// Request body
+{
+  "email": "user_updated@example.com",
+  "senha": "senha1234",
+  "qtdLimpezaBarreira": 10
+}
+```
+
+Deletar Usuário: localhost:3333/usuarios/1
+
+DELETE /usuarios/:1
